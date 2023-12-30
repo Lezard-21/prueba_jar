@@ -113,7 +113,6 @@ public class ClienteApi {
         if (band) {
             return true;
         }else{
-            res.status(404);
             return false;
         }
     };
