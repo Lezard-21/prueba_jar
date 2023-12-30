@@ -105,7 +105,7 @@ public class ClienteApi {
         Cliente c = null;
         boolean band = false;
         for (Cliente cliente : listaClientes) {
-            if (cliente.getId() != null && cliente.getId().equals(cliente.getId())) {
+            if (cliente.getNombre().equals(user.getNombre()) && cliente.getPassword().equals(user.getPassword())) {
                 c = cliente;
                 band = true;
             }
